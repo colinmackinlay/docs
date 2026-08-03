@@ -1,0 +1,112 @@
+{
+  "projectType": "saas",
+  "projectName": "Clever School Systems",
+  "projectDescription": "A modular school management platform that helps schools streamline compliance, safeguarding, development planning, risk management, staff appraisal, and more in one place.",
+  "theme": "almond",
+  "primaryColor": "#0092b8",
+  "lightColor": "#005f78",
+  "darkColor": "#00d3f2",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "initial-setup"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "administration/users",
+              "administration/modules",
+              "administration/authentication"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Modules",
+        "groups": [
+          {
+            "group": "Compliance & Safety",
+            "pages": [
+              "compliance/overview",
+              "safety/overview",
+              "safeguarding/overview",
+              "riskassessment/overview",
+              "risk/overview",
+              "site/overview"
+            ]
+          },
+          {
+            "group": "School Improvement",
+            "pages": [
+              "development/overview",
+              "performance/overview",
+              "standards/overview",
+              "curriculum/overview"
+            ]
+          },
+          {
+            "group": "Self Evaluation",
+            "pages": [
+              "sef-ofsted/overview",
+              "sef-siams/overview",
+              "sef-catholic/overview",
+              "sef-orthodox/overview"
+            ]
+          },
+          {
+            "group": "Communication & Admin",
+            "pages": [
+              "calendar/overview",
+              "documents/overview",
+              "enrolment/overview",
+              "application/overview",
+              "website/overview"
+            ]
+          },
+          {
+            "group": "AI Tools",
+            "pages": [
+              "ai/overview"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Compliance Audit — track statutory requirements across regulatory areas with colour-coded review dates and owner reminders",
+    "Safety Audit — 280 health and safety checks across 35 categories with configurable per-room frequency",
+    "Safeguarding Audit — Section 11 Children Act checks with area ownership and weekly email reminders",
+    "Risk Assessments — create, approve, and confirm risk assessments; staff are alerted on updates",
+    "Risk Register — record risks with likelihood/impact ratings and treatment strategies",
+    "Development Planning — multi-level school improvement plans with cascading actions, owners, and termly updates",
+    "Professional Development (Appraisal) — objective setting, interim review, self-review, and final review workflow",
+    "Professional Standards — teacher self-reflection against standards frameworks with evidence storage",
+    "School Calendars — publish iCal-integrated calendars with yearly rollover and staff subscriptions",
+    "Document Management — staff confirmation tracking for policies and key documents",
+    "Enrolment — online parent enrolment with DfE ATF export and consent gathering",
+    "Applications — sixth-form application management for internal and external students",
+    "Curriculum Publication — structured curriculum data published via JSON API for school websites",
+    "Self Evaluation Forms — Ofsted, SIAMS, Catholic, and Orthodox SEF frameworks with printable summaries",
+    "Site Room Checks — configurable periodic room-by-room health and safety audits",
+    "Website Utilities — staff contact forms and word-of-the-week content tools",
+    "AI Tools — experimental image generation and AI demonstration tools for school staff",
+    "Multi-school / MAT support — central management and cascading of plans, audits, and compliance items across groups of schools"
+  ],
+  "publicApiSurface": [
+    "GET /curriculum (JSON API) — returns published curriculum content by year and subject for school websites",
+    "iCal feed URLs — subscribe to school calendars from any calendar app",
+    "DfE ATF file export — import enrolment data into Management Information Systems",
+    "Email notification system — automated reminders for overdue compliance items, development actions, and appraisal milestones",
+    "Administrator portal — enable/disable modules, manage users, configure roles and permissions",
+    "Role-based access control — Administrator, Manager, Owner, Viewer roles per module"
+  ]
+}

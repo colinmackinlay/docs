@@ -1,0 +1,55 @@
+---
+title: "Curriculum: Publish Your School Curriculum to Your Website"
+sidebarTitle: "Curriculum"
+description: "Structure, manage, and publish your school curriculum including SMSC coverage, key vocabulary, and unit sequences — then serve it to your website via a JSON API."
+---
+
+The Curriculum module lets subject leads organise and publish your school's curriculum in a structured, controlled way — covering key vocabulary, SMSC coverage, and unit sequences. Once content is approved and published, it is served directly to your school website via a simple JSON API, keeping what parents and students see online always in sync with your internal records.
+
+## How It Works
+
+Curriculum content is organised by **year group** and **subject**, then broken down into **Units of Work**. You can define as many units as you need and set the sequence in which they are delivered. Each unit includes:
+
+- A short **title** and **description**
+- The **sequence of delivery** within the year
+- A brief description of the **assessment approach** for that unit
+
+Subject leads draft their content on the system and submit it for review. A **publisher** must approve all changes before they go live, ensuring quality control remains in place before anything reaches your website or is visible to the public.
+
+## Key Vocabulary
+
+Add **key vocabulary** to each unit, complete with meanings and examples to help students engage with the language of each subject. Words can be reused across multiple units without duplication. For older year groups, you can provide more sophisticated definitions and examples of the same term — tailoring the vocabulary to the reading level and prior knowledge of each cohort.
+
+## SMSC Coverage
+
+Tag any unit with the **SMSC** (Spiritual, Moral, Social, and Cultural) elements it addresses, and add detail explaining how the unit covers each element. This gives you a clear, auditable record of SMSC provision across the curriculum that you can draw on for inspection preparation or reporting to governors.
+
+## Approval Workflow
+
+Subject leads can draft and update curriculum content at any time, but changes only go live after a **publisher** approves them. This two-step process keeps quality control in place and ensures that your published curriculum — including what appears on your website — is always accurate and authorised.
+
+## Publishing to Your Website
+
+Once content is published, your curriculum is available via the **Clever School JSON API**. Your website makes a GET request to a unique URL for each combination of school, year group, and subject, and receives the full curriculum content in JSON format:
+
+```
+GET https://cleverschool.systems/api/curriculum/{school}/{year}/{subject}
+```
+
+Your website provider uses these URLs to retrieve and display the curriculum on your public-facing school website — keeping it automatically up to date whenever you publish a change in Clever School.
+
+<Tip>
+  Displaying the JSON content on your website requires some web development knowledge. Share the API endpoint URLs with your website provider and ask them to integrate the feed into your curriculum pages.
+</Tip>
+
+<Note>
+  The JSON API delivers curriculum data in a structured format, but it does not include any front-end display logic. Your website developer will need to write the code to retrieve the feed and render it in a way that suits your website's design.
+</Note>
+
+## Key Features
+
+- Year group, subject, and unit structure with configurable delivery sequences
+- SMSC tagging with detail on how each unit addresses each element
+- Key vocabulary with meanings, examples, and age-differentiated definitions
+- Draft and publish approval workflow for quality control
+- JSON API for live integration with your school website

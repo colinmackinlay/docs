@@ -1,0 +1,102 @@
+---
+title: "Configure Clever School Systems for Your School"
+sidebarTitle: "Initial Setup"
+description: "Enable modules, configure user roles, and complete the first-time setup steps to get Clever School Systems ready for your school."
+---
+
+After registering your school and verifying your email, there are a few important configuration tasks to complete before your staff can start working in Clever School Systems. This guide covers everything an Administrator should do on first login: enabling the modules your school needs, adding staff accounts, assigning the right roles and permissions, and setting up sign-in options.
+
+## Enabling Modules
+
+Clever School Systems is built around a set of independent modules, each covering a distinct area of school management. As an Administrator, you can enable or disable any module from the **Administration** panel. Once you enable a module, it becomes immediately available to the staff members you have assigned to it.
+
+The following modules are available in Clever School Systems:
+
+- **Risk Assessments** — Create, review, and manage risk assessments across your school.
+- **Health and Safety Audit** — Carry out structured H&S audits and track actions to completion.
+- **Safeguarding Audit** — Run safeguarding audits aligned to statutory requirements.
+- **Compliance Audit** — Monitor compliance obligations and record evidence of actions taken.
+- **Development Plans** — Build and track school improvement and development plans.
+- **School Calendars** — Manage and publish your school calendar for staff and parents.
+- **Professional Development / Appraisal** — Record CPD activity and manage staff appraisal cycles.
+- **Professional Standards** — Track staff progress against teaching and leadership standards.
+- **Ofsted Self Evaluation** — Maintain and update your Ofsted Self-Evaluation Form (SEF).
+- **Section 48 Self Evaluation** — Prepare self-evaluation for SIAMS and Catholic school inspections.
+- **Risk Register** — Maintain a live register of strategic and operational risks.
+- **Site Room Audit** — Conduct and record audits of individual rooms and site areas.
+- **School Documents** — Store, organise, and share key school documents and policies.
+- **Website Content Utilities** — Manage website obligations such as curriculum publication requirements.
+- **Applications** — Handle admission applications and related correspondence.
+- **Enrolments** — Manage the enrolment process for new pupils joining your school.
+
+<Tip>
+  Enable only the modules your school needs right away. You can return to the Administration panel at any time to enable additional modules as your use of the system grows.
+</Tip>
+
+## Adding Users
+
+Add staff members via **Administration > Users**. Each person requires a name and a valid email address. When you add a new user, Clever School Systems sends them an email invitation with a link to set their password and access the system.
+
+<Note>
+  Users must click the link in their invitation email before they can log in. Until they do, their account shows a status of **Unverified**. You can resend the invitation email at any time from the Users list.
+</Note>
+
+You assign roles to each user when you create their account, or you can update roles at any time afterwards. Roles are set per module, so a staff member can have different levels of access in different parts of the system.
+
+## User Roles and Permissions
+
+Clever School Systems uses a four-level role hierarchy to control what each person can see and do.
+
+| Role | What they can do |
+|---|---|
+| **Administrator** | Full access to all modules and all Administration settings. Responsible for enabling modules and assigning Manager roles. |
+| **Manager** | Oversees a module. Can assign Owner and Viewer roles to other staff within their module. |
+| **Owner** | Can create, edit, and submit records within a module. |
+| **Viewer** | Read-only access to records within a module. |
+
+Each module uses its own named variants of these roles to make responsibilities clear — for example, **Compliance Manager**, **Compliance Owner**, and **Compliance Viewer** in the Compliance Audit module. The underlying permissions follow the same hierarchy across all modules.
+
+<Warning>
+  Only Administrators can assign Manager roles. If a Manager needs to give a colleague access to their module, they can assign Owner or Viewer roles — but they cannot grant Manager-level access. Contact your Administrator if a higher role is needed.
+</Warning>
+
+## External Authentication
+
+In addition to the standard email and password login, Clever School Systems supports sign-in via social media and third-party identity providers such as Google. Staff members can link their account to an existing provider during their first login or from their account settings at any time.
+
+<Tip>
+  External authentication is especially convenient in schools where staff already use Google Workspace. It removes the need to manage a separate Clever School Systems password.
+</Tip>
+
+## What to do next
+
+<CardGroup cols={2}>
+  <Card
+    title="Users"
+    icon="users"
+    href="/administration/users"
+  >
+    Manage staff accounts, understand user states, and learn about archiving and deleting users.
+  </Card>
+  <Card
+    title="Modules"
+    icon="grid-2"
+    href="/administration/modules"
+  >
+    Explore all available modules and configure access for your staff.
+  </Card>
+  <Card
+    title="Authentication"
+    icon="lock"
+    href="/administration/authentication"
+  >
+    Configure sign-in options including social media and third-party providers.
+  </Card>
+  <Card
+    title="Introduction"
+    icon="book-open"
+    href="/introduction"
+  >
+    Get a high-level overview of everything Clever School Systems offers.
+  </Card>
+</CardGroup>

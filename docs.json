@@ -1,72 +1,105 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "almond",
+  "name": "Clever School Systems",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0092b8",
+    "light": "#005f78",
+    "dark": "#00d3f2"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "tab": "Getting Started",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "initial-setup"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "administration/users",
+              "administration/modules",
+              "administration/authentication"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Modules",
+        "groups": [
+          {
+            "group": "Compliance & Safety",
+            "pages": [
+              "compliance/overview",
+              "safety/overview",
+              "safeguarding/overview",
+              "riskassessment/overview",
+              "risk/overview",
+              "site/overview"
+            ]
+          },
+          {
+            "group": "School Improvement",
+            "pages": [
+              "development/overview",
+              "performance/overview",
+              "standards/overview",
+              "curriculum/overview"
+            ]
+          },
+          {
+            "group": "Self Evaluation",
+            "pages": [
+              "sef-ofsted/overview",
+              "sef-siams/overview",
+              "sef-catholic/overview",
+              "sef-orthodox/overview"
+            ]
+          },
+          {
+            "group": "Communication & Admin",
+            "pages": [
+              "calendar/overview",
+              "documents/overview",
+              "enrolment/overview",
+              "application/overview",
+              "website/overview"
+            ]
+          },
+          {
+            "group": "AI Tools",
+            "pages": [
+              "ai/overview"
+            ]
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    ]
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@cleverschool.systems"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Login",
+      "href": "https://cleverschool.systems"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/cleverschoolsys",
+      "linkedin": "https://linkedin.com/company/cleverschool-systems"
     }
   }
 }
